@@ -6,11 +6,10 @@ import Menuitem from "../menu-item/menu-item.component";
 import "./directory.styles.scss";
 
 const directory = ({ sections }) => {
-  console.log("here", sections);
   return (
     <div className="directory-menu">
-      {sections.map(({ id, ...otherSectionProps }) => (
-        <Menuitem key={id} {...otherSectionProps} />
+      {sections.map(({ id, ...othersectionprops }) => (
+        <Menuitem key={id} {...othersectionprops} />
       ))}
     </div>
   );
